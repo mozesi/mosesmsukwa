@@ -9,6 +9,9 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class Social extends Model
 {
     use HasFactory;
+    protected $casts = [
+        'icon' => 'array',
+    ];
 
     public function profile():BelongsTo
     {

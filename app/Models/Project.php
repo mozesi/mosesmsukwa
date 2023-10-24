@@ -9,4 +9,9 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 class Project extends Model
 {
     use HasFactory;
+
+    public function profile():BelongsTo
+    {
+        return $this->belongsTo(Profile::class);
+    }
 }
