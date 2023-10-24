@@ -10,6 +10,8 @@ use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
+use Filament\Forms\Components\FileUpload;
+
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
@@ -23,10 +25,28 @@ class ProfileResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('first_name'),
-                Forms\Components\TextInput::make('middle_name'),
-                Forms\Components\TextInput::make('last_name'),
-                Forms\Components\TextInput::make('first_name'),
+                Forms\Components\TextInput::make('first_name')
+                ->required()
+                ->maxLength(255),
+                Forms\Components\TextInput::make('middle_name')
+                ->required()
+                ->maxLength(255),
+                Forms\Components\TextInput::make('last_name')
+                ->required()
+                ->maxLength(255),
+                Forms\Components\TextInput::make('bio')
+                ->required(),
+                Forms\Components\TextInput::make('primary_email')
+                ->email()
+                ->required(),
+                Forms\Components\TextInput::make('secondary_email')
+                ->email(),
+                Forms\Components\TextInput::make('primary_phone')
+                ->tel()
+                ->required(),
+                Forms\Components\TextInput::make('secondary_phone')
+                ->tel(),
+                FileUpload::make('profile_picture'),
             ]);
     }
 
@@ -34,7 +54,10 @@ class ProfileResource extends Resource
     {
         return $table
             ->columns([
-                //
+                Tables\Columns\TextColumn::make('first_name'),
+                Tables\Columns\TextColumn::make('middle_name'),
+                Tables\Columns\TextColumn::make('last_name'),
+                Tables\Columns\TextColumn::make('primary_phone'),
             ])
             ->filters([
                 //
