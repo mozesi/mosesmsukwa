@@ -46,7 +46,7 @@ class ProfileResource extends Resource
                 ->required(),
                 Forms\Components\TextInput::make('secondary_phone')
                 ->tel(),
-                FileUpload::make('profile_picture'),
+                FileUpload::make('profile_picture')->imageEditor()->moveFiles(),
             ]);
     }
 
