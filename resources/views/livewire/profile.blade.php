@@ -1,11 +1,12 @@
 <div>
-    <div class="container flex flex-col-reverse md:flex-row items-center px-6 mx:auto mt-10 space-y-0 md:space-y-0">
+    <div class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0">
         <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
             <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">
                 Hi! my name is {{$myProfile->first_name}} {{$myProfile->last_name}}
              </h1>
              <h1 class="max-w-sm text-center text md:text-left">
-                 {{$myProfile->bio}}
+                {{$myProfile->bio}}
+
              </h1>
              <div class="flex justify-center md:justify-start">
                  <a href="#" class=" hidden md:block p-3 px-6 pt-2 text-white bg-red-500 rounded-full baseline hover:bg-red-300">
@@ -17,16 +18,114 @@
             <img src="storage/{{$myProfile->profile_picture}}" alt="{{$myProfile->first_name}}{{$myProfile->last_name}}">
         </div>
     </div>
-    <div class="container flex flex-col-reverse md:flex-row items-center px-6 mx:auto mt-10 space-y-0 md:space-y-0">
-        <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
-            <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">
+    <div class="container flex flex-col px-4 mx-auto mt-5 space-y-12 md:space-y-0 md:flex-row">
+        <div class="flex flex-col space-y-12 md:w-1/2">
+            <h2 class="max-w-md text-4xl font-bold text-center md:text-left">
                 My recent Projects
-            </h1>
+            </h2>
             <p class="max-w-sm text-center text-black md:text-left">
-                Below is the list of my projects.
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+when an unknown printer took a galley of type and scrambled it to make a type specimen book.
             </p>
         </div>
+        <div class="flex flex-col space-y-8 md:w-1/2">
+            <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+                <div class="rounded-l-full bg-red-300 md:bg-transparent">
+                    <div class="flex items-center space-x-2">
+                        <div class="px-4 py-2 rext-white rounded-full md:py-1 bg-red-500">
+                            01
+                        </div>
+                        <h3 class="text-base font-bold md:mb-4 md:hidden">
+                            when an unknown printer
+                        </h3>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="hidden mb-4 text-lg font-bold md:block">
+                        when an unknown printer
+                    </h3>
+                    <p class="max-w-sm text-center text-black md:text-left">
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+                <div class="rounded-l-full bg-red-300 md:bg-transparent">
+                    <div class="flex items-center space-x-2">
+                        <div class="px-4 py-2 rext-white rounded-full md:py-1 bg-red-500">
+                            01
+                        </div>
+                        <h3 class="text-base font-bold md:mb-4 md:hidden">
+                            when an unknown printer
+                        </h3>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="hidden mb-4 text-lg font-bold md:block">
+                        when an unknown printer
+                    </h3>
+                    <p class="max-w-sm text-center text-black md:text-left">
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </p>
+                </div>
+            </div>
+            <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+                <div class="rounded-l-full bg-red-300 md:bg-transparent">
+                    <div class="flex items-center space-x-2">
+                        <div class="px-4 py-2 rext-white rounded-full md:py-1 bg-red-500">
+                            01
+                        </div>
+                        <h3 class="text-base font-bold md:mb-4 md:hidden">
+                            when an unknown printer
+                        </h3>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="hidden mb-4 text-lg font-bold md:block">
+                        when an unknown printer
+                    </h3>
+                    <p class="max-w-sm text-center text-black md:text-left">
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
+    <div class="bg-red-300 mt-10">
+        <div class="container flex flex-col items-center justiofy-between px-6 py-24 ms-auto space-y-12 md:py-12 md:flex-row md:space-y-0">
+            <h2 class="text-5xl font-bold leading-tight text-center text-white md-text-4xl md:max-w-xl md:text-left">
+                Hire me.
+            </h2>
+            <a href="#" class=" hidden md:block p-3 px-6 pt-2 text-red-500 bg-white rounded-full baseline">
+                Download resume
+            </a>
+        </div>
+    </div>
+    <footer class="bg-black">
+        <div class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+            <div class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
+                <div>
+                    <img src="storage/logo.png" class="h-8" alt="">
+                </div>
+            </div>
+            <div class="flex justify-center space-x-4">
+                <a href="#">
+                    <img src="storage/logo.png" class="h-8" alt="">
+                </a>
+                <a href="#">
+                    <img src="storage/logo.png" class="h-8" alt="">
+                </a>
+                <a href="#">
+                    <img src="storage/logo.png" class="h-8" alt="">
+                </a>
+            </div>
+        </div>
+
+    </footer>
 </div>
 
 
