@@ -12,14 +12,14 @@
         <nav class="relative container mx-auto p-6">
             <div class="flex items-center justify-between">
                 <div class="pt-2">
-                    <img src="storage/logo-black.png" alt="moses msukwa">
+                    <a href="/" wire:navigate><img src="storage/logo-black.png" alt="moses msukwa"></a>
                 </div>
                 <div class="hidden md:flex space-x-6">
-                    <a href="#">Education</a>
-                    <a href="#">Experience</a>
-                    <a href="#">Certifications</a>
-                    <a href="#">Projects</a>
-                    <a href="#">Articles</a>
+                    <a href="/education" wire:navigate>Education</a>
+                    <a href="/experience"  wire:navigate>Experience</a>
+                    <a href="/certifications" wire:navigate>Certifications</a>
+                    <a href="/projects" wire:navigate>Projects</a>
+                    <a href="/articles" wire:navigate>Articles</a>
                 </div>
                 <a href="#" class=" hidden md:block p-3 px-6 pt-2 text-white bg-red-500 rounded-full baseline hover:bg-red-300">
                     Contact me
@@ -32,11 +32,11 @@
             </div>
             <div class="md:hidden">
                 <div id="menu" class="absolute hidden flex-col items-center self-end   py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
-                    <a href="#">Education</a>
-                    <a href="#">Experience</a>
-                    <a href="#">Certifications</a>
-                    <a href="#">Projects</a>
-                    <a href="#">Articles</a>
+                    <a href="/education" wire:navigate>Education</a>
+                    <a href="/experience"  wire:navigate>Experience</a>
+                    <a href="/certifications" wire:navigate>Certifications</a>
+                    <a href="/projects" wire:navigate>Projects</a>
+                    <a href="/articles" wire:navigate>Articles</a>
                     <button wire:click="downloadResume" class="p-3 px-6 pt-2 text-white bg-red-500 rounded-full baseline hover:bg-red-300">
                         Download resume
                     </button>
@@ -45,9 +45,8 @@
         </nav>
 
         <div >
-            @livewire('profile')
-            <livewire:contact/>
-            <livewire:footer/>
+{{$slot}}
+<livewire:footer/>
         </div>
     </body>
 </html>
