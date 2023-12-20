@@ -18,12 +18,11 @@
         </div>
     </div>
     <livewire:skill/>
-
     <div class="container flex flex-row items-center justify-between px-6 py-24 ms-auto space-y-12 md:py-12 md:flex-row md:space-y-0">
         <div class="flex flex-row space-x-8 md:w-1/2">
             @foreach($recentProjects as $recentProject)
             <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
-                <div class="rounded-l-full bg-red-300 md:bg-transparent">
+                <div class="rounded-full bg-gray-300  md:bg-transparent">
                     <div class="flex items-center space-x-2">
                         <h3 class="text-base font-bold md:mb-4 md:hidden">
                             <a href="{{$recentProject->project_link}}" alt="{{$recentProject->project_link}}"> {{$recentProject->title}}</a>
@@ -43,7 +42,6 @@
 
         </div>
     </div>
-    <livewire:contact/>
 </div>
 
 

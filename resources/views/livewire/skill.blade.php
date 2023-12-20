@@ -1,4 +1,9 @@
 <div>
+    <div class="container flex flex-row items-center justify-between px-6  ms-auto  md:flex-row md:space-y-0" >
+        <div class="flex flex-row space-x-12">
+            <h2>Skills</h2>
+       </div>
+    </div>
     <div class="container flex flex-row items-center justify-between px-6 py-24 ms-auto space-y-12 md:py-12 md:flex-row md:space-y-0" >
         <div class="flex flex-row space-x-12">
             @foreach ($mySkills as $mySkill )

@@ -3,8 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <title>Laravel</title>
+        <title>Moses Msukwa</title>
         @vite('resources/css/app.css')
         @vite('resources/js/app.js')
     </head>
@@ -15,13 +14,12 @@
                     <a href="/" wire:navigate><img src="storage/logo-black.png" alt="moses msukwa"></a>
                 </div>
                 <div class="hidden md:flex space-x-6">
-                    <a href="/education" wire:navigate>Education</a>
                     <a href="/experience"  wire:navigate>Experience</a>
-                    <a href="/certifications" wire:navigate>Certifications</a>
-                    <a href="/projects" wire:navigate>Projects</a>
-                    <a href="/articles" wire:navigate>Articles</a>
+                    <a href="/education" wire:navigate>Education</a>
+                    <a href="/project" wire:navigate>Projects</a>
+                    <a href="/articles" >Blog</a>
                 </div>
-                <a href="#" class=" hidden md:block p-3 px-6 pt-2 text-white bg-red-500 rounded-full baseline hover:bg-red-300">
+                <a href="#" class=" hidden md:block p-3 px-6 pt-2 text-white bg-black rounded-full baseline hover:bg-gray-500">
                     Contact me
                 </a>
                 <button id="menu-btn"class="block hamburger md:hidden focus:outline-none">
@@ -34,19 +32,18 @@
                 <div id="menu" class="absolute hidden flex-col items-center self-end   py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
                     <a href="/education" wire:navigate>Education</a>
                     <a href="/experience"  wire:navigate>Experience</a>
-                    <a href="/certifications" wire:navigate>Certifications</a>
                     <a href="/projects" wire:navigate>Projects</a>
-                    <a href="/articles" wire:navigate>Articles</a>
-                    <button wire:click="downloadResume" class="p-3 px-6 pt-2 text-white bg-red-500 rounded-full baseline hover:bg-red-300">
-                        Download resume
+                    <a href="/articles" >Blog</a>
+                    <button wire:click="downloadResume" class="p-3 px-6 pt-2 text-white bg-black rounded-full baseline hover:bg-red-300">
+                        Contact me
                     </button>
                 </div>
             </div>
         </nav>
 
         <div >
-{{$slot}}
-<livewire:footer/>
+        {{$slot}}
+        <livewire:footer/>
         </div>
     </body>
 </html>
