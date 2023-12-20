@@ -2,9 +2,9 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\SocialResource\Pages;
-use App\Filament\Resources\SocialResource\RelationManagers;
-use App\Models\Social;
+use App\Filament\Resources\SkillResource\Pages;
+use App\Filament\Resources\SkillResource\RelationManagers;
+use App\Models\Skill;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -13,9 +13,9 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
-class SocialResource extends Resource
+class SkillResource extends Resource
 {
-    protected static ?string $model = Social::class;
+    protected static ?string $model = Skill::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
@@ -23,20 +23,9 @@ class SocialResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('name')
-                ->label('Name')
-                ->required(),
-                Forms\Components\TextInput::make('profile_link')
-                ->label('Link to profile')
-                ->url()
-                ->required(),
-                Forms\Components\Fileupload::make('icon')
-                ->label('Icon')
-                ->required(),
-                Forms\Components\Select::make('profile_id')
-                ->relationship('profile', 'first_name')
-                ->label('Author')
-                ->required(),
+               Forms\Components\TextInput::make('skill_name')->label('Name'),
+               Forms\Components\TextInput::make('skill_link')->label('Link'),
+               Forms\Components\FileUpload::make('skill_image')->label('Image'),
             ]);
     }
 
@@ -44,8 +33,8 @@ class SocialResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('name'),
-                Tables\Columns\TextColumn::make('profile_link'),
+                Tables\Columns\TextColumn::make('skill_name'),
+                Tables\Columns\TextColumn::make('skill_link'),
             ])
             ->filters([
                 //
@@ -70,9 +59,9 @@ class SocialResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListSocials::route('/'),
-            'create' => Pages\CreateSocial::route('/create'),
-            'edit' => Pages\EditSocial::route('/{record}/edit'),
+            'index' => Pages\ListSkills::route('/'),
+            'create' => Pages\CreateSkill::route('/create'),
+            'edit' => Pages\EditSkill::route('/{record}/edit'),
         ];
     }
 }
