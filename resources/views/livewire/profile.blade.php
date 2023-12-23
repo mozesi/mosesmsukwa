@@ -16,7 +16,7 @@
              </div>
         </div>
         <div class="md:w-1/2">
-            <img src="storage/home_image/home_image.png" alt="{{$myProfile->first_name}}{{$myProfile->last_name}}">
+            <img src="storage/home_image/home_image.svg" alt="{{$myProfile->first_name}}{{$myProfile->last_name}}">
         </div>
     </div>
     <livewire:skill/>

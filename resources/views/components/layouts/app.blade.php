@@ -11,7 +11,7 @@
         <nav class="relative container mx-auto p-6">
             <div class="flex items-center justify-between">
                 <div class="pt-2">
-                    <a href="/" wire:navigate><img src="storage/logo-black.png" alt="moses msukwa"></a>
+                    <a href="/" wire:navigate>Mosesmsukwa</a>
                 </div>
                 <div class="hidden md:flex space-x-6">
                     <a href="/experience"  wire:navigate>Experience</a>
