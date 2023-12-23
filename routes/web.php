@@ -5,6 +5,7 @@ use App\Livewire\Profile;
 use App\Livewire\Education;
 use App\Livewire\Experience;
 use App\Livewire\Projects;
+use App\Livewire\Contact;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,4 @@ Route::get('/', Profile::class);
 Route::get('/education', Education::class);
 Route::get('/experience', Experience::class);
 Route::get('/project', Projects::class);
+Route::get('/contact', Contact::class);

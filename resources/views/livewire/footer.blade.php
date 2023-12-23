@@ -19,7 +19,7 @@
                 <a href="/education" wire:navigate>Education</a>
                 <a href="/experience"  wire:navigate>Experience</a>
                 <a href="/projects" wire:navigate>Projects</a>
-                <a href="/articles" wire:navigate>Blog</a>
+                <a href="/articles" wire:navigate>Articles</a>
             </div>
             <div class="flex flex-col spce-y-3 text-black">
                 <a href="#" class="hover:text-red">Github</a>
