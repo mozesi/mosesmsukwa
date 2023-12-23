@@ -15,7 +15,9 @@ class Profile extends Component
 
     public function render()
     {
-        $this->myProfile = MyProfile::find(1);
+        $myUSerId =1;
+
+        $this->myProfile = MyProfile::find($myUSerId);
         $this->recentProjects = Project::all();
 
         return view('livewire.profile');
