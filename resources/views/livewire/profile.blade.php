@@ -19,31 +19,6 @@
             <img src="storage/home_image/home_image.svg" alt="{{$myProfile->first_name}}{{$myProfile->last_name}}">
         </div>
     </div>
-    <livewire:skill/>
-    <div class="container flex flex-row items-center justify-between px-6 py-24 ms-auto space-y-12 md:py-12 md:flex-row md:space-y-0">
-        <div class="flex flex-row space-x-8 md:w-1/2">
-            @foreach($recentProjects as $recentProject)
-            <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
-                <div class="rounded-full bg-gray-300  md:bg-transparent">
-                    <div class="flex items-center space-x-2">
-                        <h3 class="text-base font-bold md:mb-4 md:hidden">
-                            <a href="{{$recentProject->project_link}}" alt="{{$recentProject->project_link}}"> {{$recentProject->title}}</a>
-                        </h3>
-                    </div>
-                </div>
-                <div>
-                    <h3 class="hidden mb-4 text-lg font-bold md:block">
-                       <a href="{{$recentProject->project_link}}"> {{$recentProject->title}}</a>
-                    </h3>
-                    <p class="max-w-sm text-center text-black md:text-left">
-                        {{$recentProject->description}}
-                    </p>
-                </div>
-            </div>
-            @endforeach
-
-        </div>
-    </div>
 </div>
 
 
