@@ -8,6 +8,8 @@ use App\Livewire\Projects;
 use App\Livewire\Contact;
 use App\Livewire\Articles;
 
+use App\Models\Skill;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,3 +27,4 @@ Route::get('/experience', Experience::class);
 Route::get('/project', Projects::class);
 Route::get('/contact', Contact::class);
 Route::get('/articles', Articles::class);
+
