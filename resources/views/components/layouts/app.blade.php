@@ -13,7 +13,7 @@
         <nav class="relative container mx-auto p-6">
             <div class="flex items-center justify-between">
                 <div class="pt-2">
-                    <a href="/" wire:navigate>Mosesmsukwa</a>
+                    <a href="/" wire:navigate>Msukwa.moses</a>
                 </div>
                 <div class="hidden md:flex space-x-6">
                     <a href="/"  wire:navigate>Home</a>
@@ -24,8 +24,8 @@
                     <a href="/articles" wire:navigate>Articles</a>
                     -->
                 </div>
-                <a href="/contact" wire:navigate class=" hidden md:block p-3 px-6 pt-2 text-white bg-black rounded-full baseline hover:bg-gray-500">
-                    <button class="p-3 px-6 pt-2 text-white bg-black rounded-full baseline hover:bg-gray-500">
+                <a href="/contact" wire:navigate class=" hidden md:block p-3 px-6 pt-2 text-white bg-black rounded-full baseline">
+                    <button class="p-3 px-6 pt-2 text-white rounded-full baseline">
                         Contact me
                     </button>
                 </a>
@@ -44,7 +44,7 @@
                     <a href="/projects" wire:navigate>Projects</a>
                     <a href="/articles" wire:navigate>Articles</a> -->
                     <a href="/contact" wire:navigate>
-                        <button class="p-3 px-6 pt-2 text-white bg-black rounded-full baseline hover:bg-gray-500">
+                        <button class="p-3 px-6 pt-2 text-white bg-black rounded-full baseline ">
                             Contact me
                         </button>
                     </a>

@@ -9,14 +9,14 @@
              </h1>
              <div class="flex justify-center md:justify-start">
                 <a href="/contact" wire:navigate>
-                    <button class="p-3 px-6 pt-2 text-white bg-black rounded-full baseline hover:bg-gray-500">
+                    <button class="p-3 px-6 pt-2 text-white bg-black rounded-full baseline ">
                         Contact me
                     </button>
                 </a>
              </div>
         </div>
         <div class="md:w-1/2">
-            <img src="storage/home_image/home_image.svg" alt="{{$myProfile->first_name}}{{$myProfile->last_name}}">
+            <img src="{{ asset('images/home_image.svg') }}" alt="{{$myProfile->first_name}}{{$myProfile->last_name}}">
         </div>
     </div>
 </div>
