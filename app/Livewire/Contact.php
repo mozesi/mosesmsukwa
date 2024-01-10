@@ -13,6 +13,8 @@ class Contact extends Component
     public $subject;
     public $description;
 
+    public $saved = false;
+
     protected $rules = [
         'email' =>'required',
         'subject' =>'required',
@@ -34,5 +36,14 @@ class Contact extends Component
             'subject' => $this->subject,
             'description' => $this->description,
         ]);
+
+        $this->resetFormFields();
+        $this->saved = true;
+    }
+
+    public function resetFormFields(){
+        $this->email ="";
+        $this->subject ="";
+        $this->description ="";
     }
 }

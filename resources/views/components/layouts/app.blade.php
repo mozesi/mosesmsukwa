@@ -13,7 +13,9 @@
         <nav class="relative container mx-auto p-6">
             <div class="flex items-center justify-between">
                 <div class="pt-2">
-                    <a href="/" wire:navigate>Msukwa.moses</a>
+                    <a href="/" wire:navigate>
+                        <img  style="height:100px" class="shadow-lg rounded-full max-w-full h-auto align-middle border-none" src="{{ asset('images/moses_msukwa.jpg') }}" alt="">
+                    </a>
                 </div>
                 <div class="hidden md:flex space-x-6">
                     <a href="/"  wire:navigate>Home</a>
