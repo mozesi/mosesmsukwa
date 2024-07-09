@@ -15,9 +15,23 @@
                 </a>
              </div>
         </div>
+        
+
         <div class="md:w-1/2">
-            <img src="{{ asset('images/home_image.svg') }}" alt="{{$myProfile->first_name}}{{$myProfile->last_name}}">
+            <img src="{{ asset('images/background.jpg') }}" alt="{{$myProfile->first_name}}{{$myProfile->last_name}}">
         </div>
+    </div>
+    <!-- List my recent projects--->
+    <div class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0">
+        @livewire('Projects')
+    </div>
+    <div  class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0">
+
+        @livewire('contact')
+    </div>
+    <div class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0">
+
+        @livewire('articles')
     </div>
 </div>
 

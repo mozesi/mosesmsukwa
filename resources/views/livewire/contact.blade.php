@@ -11,17 +11,15 @@
             </div>
           </div>
         @endif
-        <form class="container flex flex-col " wire:submit="contactMe">
-            <input class ="form-input px-4 mb-2 border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm " label="Email" wire:model="email" type="email" placeholder="name@company.com" />
-            <input class ="form-input px-4 mb-2 border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm " label="Subject" wire:model="subject" placeholder="Enter subject."  />
-            <textarea
-
-            wire:model="description"
-
-            class="block w-full mb-2 border-gray-300 focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 rounded-md shadow-sm"
-
-        ></textarea>
-        <button class=" bg-gray-800 hover:bg-gray-600 text-white font-bold py-2 px-4 rounded transition duration-300" > Send message</button>
-        </form>
     </div>
+    <x-form wire:submit="save">
+        <x-input label="Email" wire:model="email" />
+        <x-input label="Subject" wire:model="subject" />
+        <x-textarea label="Desccription" wire:model="description" />
+
+        <x-slot:actions>
+            <x-button label="Cancel" />
+            <x-button label="Send message" class="btn-primary" type="submit" spinner="save" />
+        </x-slot:actions>
+    </x-form>
 </div>

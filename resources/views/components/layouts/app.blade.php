@@ -58,5 +58,6 @@
         <div >
         {{$slot}}
         </div>
+        @livewire('footer')
     </body>
 </html>
