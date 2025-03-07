@@ -24,7 +24,7 @@ use App\Models\Skill;
 Route::get('/', Profile::class);
 Route::get('/education', Education::class);
 Route::get('/experience', Experience::class);
-Route::get('/project', Projects::class);
+Route::get('/projects', Projects::class);
 Route::get('/contact', Contact::class);
 Route::get('/articles', Articles::class);
 

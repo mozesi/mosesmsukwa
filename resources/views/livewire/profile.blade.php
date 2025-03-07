@@ -1,39 +1,66 @@
 <div>
-
-    <div class="  bg-blue-700 flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0">
-        <div class=" flex flex-col mb-32 space-y-12 md:w-1/2">
-            <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">
-                Hi! my name is {{$myProfile->first_name}} {{$myProfile->last_name}}
-             </h1>
-             <h1 class="max-w-sm text-center text md:text-left">
-                {{$myProfile->bio}}
-             </h1>
-             <div class="flex justify-center md:justify-start">
-                <a href="/contact" wire:navigate>
-                    <button class="p-3 px-6 pt-2 text-white bg-black rounded-full baseline ">
-                        Get in touch
-                    </button>
-                </a>
-             </div>
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 pb-20 bg-gradient-to-r from-blue-500 to-purple-600">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center text-white">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Hello, I'm Moses Msukwa</h1>
+                <p class="text-xl mb-6">Web Developer & Designer</p>
+                <a href="#contact" class="bg-white text-blue-500 px-6 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300">Hire Me</a>
+            </div>
         </div>
+    </section>
 
-
-        <div class="md:w-1/2">
-            <img src="{{ asset('images/background.jpg') }}" alt="{{$myProfile->first_name}}{{$myProfile->last_name}}">
+    <!-- About Section -->
+    <section id="about" class="py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-6 md:mb-0">
+                    <img src="https://via.placeholder.com/300" alt="Profile" class="rounded-full mx-auto">
+                </div>
+                <div class="md:w-2/3 md:pl-10">
+                    <p class="text-gray-600 mb-4">I'm a passionate web developer with 5+ years of experience in creating beautiful and functional websites. I specialize in front-end development and UI/UX design.</p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div><strong>Skills:</strong> HTML, CSS, JavaScript</div>
+                        <div><strong>Frameworks:</strong> React, Tailwind CSS</div>
+                        <div><strong>Tools:</strong> Git, VS Code</div>
+                        <div><strong>Experience:</strong> 5+ Years</div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <!-- List my recent projects--->
-    <div class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0">
-        @livewire('Projects')
-    </div>
-    <div  class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0">
+    </section>
 
-        @livewire('contact')
-    </div>
-    <div class="container flex flex-col-reverse md:flex-row items-center px-6 mx-auto mt-10 space-y-0 md:space-y-0">
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Portfolio</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://via.placeholder.com/400x300" alt="Project 1" class="w-full">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg">Project 1</h3>
+                        <p class="text-gray-600">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://via.placeholder.com/400x300" alt="Project 2" class="w-full">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg">Project 2</h3>
+                        <p class="text-gray-600">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://via.placeholder.com/400x300" alt="Project 3" class="w-full">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-lg">Project 3</h3>
+                        <p class="text-gray-600">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        @livewire('articles')
-    </div>
 </div>
 
 
