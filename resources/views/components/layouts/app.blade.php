@@ -26,7 +26,7 @@
                     <a href="#about" class="py-4 px-2 text-gray-500 hover:text-blue-500 transition duration-300">About</a>
                     <a href="/articles"  wire:navigate class="py-4 px-2 text-gray-500 hover:text-blue-500 transition duration-300">Articles</a>
                     <a href="/projects"  wire:navigate class="py-4 px-2 text-gray-500 hover:text-blue-500 transition duration-300">Projects</a>
-                    <a href="#contact" class="py-4 px-2 text-gray-500 hover:text-blue-500 transition duration-300">Contact</a>
+                    <a href="contact" class="py-4 px-2 text-gray-500 hover:text-blue-500 transition duration-300">Contact</a>
                 </div>
                 <button id="menu-btn"class="block hamburger md:hidden focus:outline-none">
                     <span class="hamburger-top"></span>
@@ -39,7 +39,7 @@
                         <a href="/profile" class="py-4 px-2 text-gray-500 hover:text-blue-500 transition duration-300">About</a>
                         <a href="/articles"  wire:navigate class="py-4 px-2 text-gray-500 hover:text-blue-500 transition duration-300">Articles</a>
                         <a href="/projects"  wire:navigate class="py-4 px-2 text-gray-500 hover:text-blue-500 transition duration-300">Projects</a>
-                        <a href="#contact" class="py-4 px-2 text-gray-500 hover:text-blue-500 transition duration-300">Contact</a>
+                        <a href="/contact"  wire:navigate class="py-4 px-2 text-gray-500 hover:text-blue-500 transition duration-300">Contact</a>
                     </div>
                 </div>
             </div>
@@ -51,7 +51,12 @@
     </section>
 
     <!-- Contact Section -->
-    @livewire('contact')
+    <section id="contact" class="py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Section</h2>
+
+        </div>
+    </section>
 
     <!-- Footer -->
     @livewire('footer')
