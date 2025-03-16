@@ -1,12 +1,12 @@
 <div>
-    <section class="min-h-screen py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-indigo-100">
+    <section class="min-h-screen py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div class="max-w-7xl mx-auto">
             <!-- Header -->
             <div class="text-center mb-12">
-                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 animate-fade-in-down">
-                    Professional Experience
+                <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4 animate-fade-in-down">
+                    Experience
                 </h2>
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                <p class="text-xl font-mono text-gray-600 max-w-2xl mx-auto">
                     A journey through my professional milestones and achievements
                 </p>
             </div>
@@ -63,13 +63,6 @@
                     Get in Touch
                 </a>
             </div>
-        </div>
-    </section>
-
-    <!-- Tech stack -->
-    <section id="contact" class="py-20">
-        <div class="max-w-6xl mx-auto px-4">
-            @livewire('skill')
         </div>
     </section>
 
