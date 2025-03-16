@@ -1,27 +1,17 @@
-<div class="container flex flex-col px-4 mx-auto mt-5 space-y-12 md:space-y-0 md:flex-row">
-    <div class="flex flex-col space-y-8 md:w-1/2">
-        @foreach($myProjects as $myProject)
-        <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
-            <div class="rounded-l-full bg-red-300 md:bg-transparent">
-                <div class="flex items-center space-x-2">
-                    <div class="px-4 py-2 rext-white rounded-full md:py-1 bg-red-500">
-                        0{{$myProject->id}}
+    <section id="portfolio" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Portfolio</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                @foreach( $myProjects as $myProject)
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://via.placeholder.com/400x300" alt="{{$myProject->title}}" class="w-full">
+                    <div class="p-6">
+                        <h3 class="font-semibold text-lg">{{$myProject->title}}</h3>
+                        <p class="text-gray-600">{{$myProject->description}}</p>
                     </div>
-                    <h3 class="text-base font-bold md:mb-4 md:hidden">
-                        <a href="{{$myProject->project_link}}" alt="{{$myProject->project_link}}"> {{$myProject->title}}</a>
-                    </h3>
                 </div>
-            </div>
-            <div>
-                <h3 class="hidden mb-4 text-lg font-bold md:block">
-                   <a href="{{$myProject->project_link}}"> {{$myProject->title}}</a>
-                </h3>
-                <p class="max-w-sm text-center text-black md:text-left">
-                    {{$myProject->description}}
-                </p>
+                @endforeach
             </div>
         </div>
-        @endforeach
+    </section>
 
-    </div>
-</div>
