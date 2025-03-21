@@ -4,7 +4,15 @@
         <link rel="icon" href="{{ URL::asset('favicon.ico') }}" type="image/x-icon"/>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>mosesmsukwa</title>
+        <meta name="description" content="Welcome, I&#39;m Moses Msukwa, an ICT engineer.">
+        <meta name="robots" content="index,follow">
+        <link rel="canonical" href="https://msukwa.com">
+        <meta property="og:title" content="Jeremiah Chienda">
+        <meta property="og:description" content="Welcome, I&#39;m Moses Msukwa, an ICT engineer.">
+        <meta property="og:url" content="https://msukwa.com">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="{{ asset('images/mosesmsukwasite.webp') }}">
+        <title>Moses Msukwa</title>
         @vite('resources/css/app.css')
         @vite('resources/js/app.js')
     </head>
