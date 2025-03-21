@@ -7,7 +7,7 @@
         <meta name="description" content="Welcome, I&#39;m Moses Msukwa, an ICT engineer.">
         <meta name="robots" content="index,follow">
         <link rel="canonical" href="https://msukwa.com">
-        <meta property="og:title" content="Jeremiah Chienda">
+        <meta property="og:title" content="Moses Msukwa">
         <meta property="og:description" content="Welcome, I&#39;m Moses Msukwa, an ICT engineer.">
         <meta property="og:url" content="https://msukwa.com">
         <meta property="og:type" content="website">
