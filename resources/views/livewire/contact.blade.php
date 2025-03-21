@@ -1,5 +1,6 @@
 <div>
     <section id="contact" class="py-20">
+
         <div class="max-w-6xl mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12">Get in Touch</h2>
             <form class="max-w-lg mx-auto">

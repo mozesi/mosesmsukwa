@@ -1,17 +1,14 @@
-<div id="portfolio" class="py-20 bg-gray-50">
-    <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-5xl font-bold text-gray-900 mb-4 animate-fade-in-down">
-           Tech insights
-        </h2>
-        <p class="text-xl font-mono text-gray-600 max-w-2xl mx-auto">
-            Explore my write ups on technology and innovation
-        </p>
-    </div>
+<div>
+    <header class=" text-black">
+        <div class="container mx-auto text-center">
+            <h1 class="text-3xl font-bold">Something you can read!</h1>
+        </div>
+    </header>
 
     <!-- Articles Section -->
     <main class="container mx-auto p-6 mt-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        @foreach($articles as $article)
+        <div class="row">
+            @foreach($myRecentArticles as $article)
                 <ul>
                     <div class=" overflow-hidden hover:shadow-lg transition-shadow">
                         <div class="p-4">
@@ -22,7 +19,7 @@
                         </div>
                     </div>
                 </ul>
-        @endforeach
+            @endforeach
         </div>
     </main>
 </div>

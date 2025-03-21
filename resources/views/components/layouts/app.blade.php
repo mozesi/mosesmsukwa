@@ -2,7 +2,6 @@
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <link rel="icon" href="{{ URL::asset('favicon.ico') }}" type="image/x-icon"/>
-
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>mosesmsukwa</title>
@@ -23,10 +22,10 @@
                 </div>
                 <div class="hidden md:flex items-center space-x-1">
                     <a href="/"  wire:navigate class="py-4 px-2 text-gray-500 hover:text-blue-500 transition duration-300">Home</a>
-                    <a href="#about" class="py-4 px-2 text-gray-500 hover:text-blue-500 transition duration-300">About</a>
+                    <a href="/experience" class="py-4 px-2 text-gray-500 hover:text-blue-500 transition duration-300">About</a>
                     <a href="/articles"  wire:navigate class="py-4 px-2 text-gray-500 hover:text-blue-500 transition duration-300">Articles</a>
                     <a href="/projects"  wire:navigate class="py-4 px-2 text-gray-500 hover:text-blue-500 transition duration-300">Projects</a>
-                    <a href="#contact" class="py-4 px-2 text-gray-500 hover:text-blue-500 transition duration-300">Contact</a>
+                    <a href="contact" class="py-4 px-2 text-gray-500 hover:text-blue-500 transition duration-300">Contact</a>
                 </div>
                 <button id="menu-btn"class="block hamburger md:hidden focus:outline-none">
                     <span class="hamburger-top"></span>
@@ -39,7 +38,7 @@
                         <a href="/profile" class="py-4 px-2 text-gray-500 hover:text-blue-500 transition duration-300">About</a>
                         <a href="/articles"  wire:navigate class="py-4 px-2 text-gray-500 hover:text-blue-500 transition duration-300">Articles</a>
                         <a href="/projects"  wire:navigate class="py-4 px-2 text-gray-500 hover:text-blue-500 transition duration-300">Projects</a>
-                        <a href="#contact" class="py-4 px-2 text-gray-500 hover:text-blue-500 transition duration-300">Contact</a>
+                        <a href="/contact"  wire:navigate class="py-4 px-2 text-gray-500 hover:text-blue-500 transition duration-300">Contact</a>
                     </div>
                 </div>
             </div>
@@ -49,9 +48,6 @@
     <section>
         {{$slot}}
     </section>
-
-    <!-- Contact Section -->
-    @livewire('contact')
 
     <!-- Footer -->
     @livewire('footer')
@@ -71,6 +67,21 @@
         .animate-fade-in-down {
             animation: fadeInDown 1s ease-out;
         }
+             /* Custom animation for marquee */
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .marquee {
+            animation: marquee 20s linear infinite;
+        }
+
+        /* Pause animation on hover */
+        .marquee:hover {
+            animation-play-state: paused;
+        }
+
     </style>
     </body>
 
