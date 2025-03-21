@@ -11,7 +11,7 @@ class Experience extends Component
 
     public function render()
     {
-        $this->myExperience = Work::all();
+        $this->myExperience = Work::orderBy('start_date', 'DESC')->get();
 
         return view('livewire.experience');
     }
