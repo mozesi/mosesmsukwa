@@ -1,4 +1,4 @@
-import './bootstrap';
+import './bootstrap.js';
 
 const btn = document.getElementById('menu-btn')
 const nav = document.getElementById('menu')

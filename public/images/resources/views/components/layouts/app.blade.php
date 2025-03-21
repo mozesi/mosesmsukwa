@@ -4,7 +4,16 @@
         <link rel="icon" href="{{ URL::asset('favicon.ico') }}" type="image/x-icon"/>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>mosesmsukwa</title>
+        <meta name="description" content="Welcome to my Word. I&#39;m Moses Msukwa, an ICT Developer.">
+        <meta name="robots" content="index,follow">
+        <link rel="canonical" href="https://msukwa.com">
+        <meta property="og:title" content="Mose Msukwa">
+        <meta property="og:description" content="Welcome to my Word. I&#39;m Moses Msukwa, an ICT Developer.">
+        <meta property="og:url" content="https://msukwa.com">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="{{ asset('images/mosesmsukwasite.webp') }}">
+        <title>Moses Msukwa</title>
+
         @vite('resources/css/app.css')
         @vite('resources/js/app.js')
     </head>
@@ -21,7 +30,7 @@
                     </div>
                 </div>
                 <div class="hidden md:flex items-center space-x-1">
-                    <a href="/"  wire:navigate class="py-4 px-2 text-gray-500 hover:text-blue-500 transition duration-300">Home</a>
+                    <a href="/" wire:navigate class="py-4 px-2 text-gray-500 hover:text-blue-500 transition duration-300">Home</a>
                     <a href="/experience" class="py-4 px-2 text-gray-500 hover:text-blue-500 transition duration-300">About</a>
                     <a href="/articles"  wire:navigate class="py-4 px-2 text-gray-500 hover:text-blue-500 transition duration-300">Articles</a>
                     <a href="/projects"  wire:navigate class="py-4 px-2 text-gray-500 hover:text-blue-500 transition duration-300">Projects</a>
@@ -34,7 +43,7 @@
                 </button>
                 <div class="md:hidden">
                     <div id="menu" class="absolute hidden flex-col items-center self-end   py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
-                        <a href="/"  wire:navigate class="py-4 px-2 text-gray-500 hover:text-blue-500 transition duration-300">Home</a>
+                        <a href="/" wire:navigate class="py-4 px-2 text-gray-500 hover:text-blue-500 transition duration-300">Home</a>
                         <a href="/profile" class="py-4 px-2 text-gray-500 hover:text-blue-500 transition duration-300">About</a>
                         <a href="/articles"  wire:navigate class="py-4 px-2 text-gray-500 hover:text-blue-500 transition duration-300">Articles</a>
                         <a href="/projects"  wire:navigate class="py-4 px-2 text-gray-500 hover:text-blue-500 transition duration-300">Projects</a>
