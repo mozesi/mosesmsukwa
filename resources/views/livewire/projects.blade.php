@@ -4,16 +4,15 @@
                 Projects
             </h2>
             <p class="text-xl font-mono text-gray-600 max-w-2xl mx-auto">
-                A journey through my professional milestones and achievements
+                A journey through some of my side projects.
             </p>
         </div>
         <div class="max-w-6xl mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 @foreach( $myProjects as $myProject)
                 <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                    <img src="https://via.placeholder.com/400x300" alt="{{$myProject->title}}" class="w-full">
                     <div class="p-6">
-                        <h3 class="font-semibold text-lg">{{$myProject->title}}</h3>
+                       <a href="{{$myProject->project_link}}"><h3 class="font-semibold text-lg">{{$myProject->title}}</h3></a>
                         <p class="text-gray-600">{{$myProject->description}}</p>
                     </div>
                 </div>
