@@ -15,13 +15,13 @@
                         <!-- First set of images -->
                         <div class="flex space-x-4">
                             @foreach ($mySkills as $mySkill )
-                                <img  class="grayscale bg-white" height="200px" width="200px" src='{{$mySkill->skill_link}}' alt="{{$mySkill->skill_name}}" title="{{$mySkill->skill_name}}">
+                                <img class="grayscale " height="250px" width="250px"  src='{{$mySkill->skill_link}}' alt="{{$mySkill->skill_name}}" title="{{$mySkill->skill_name}}">
                             @endforeach
                         </div>
                         <div class="m-2"></div>
                         <div class="flex space-x-4">
                             @foreach ($mySkills as $mySkill )
-                                <img  class="grayscale bg-white" height="200px" width="200px" src='{{$mySkill->skill_link}}' alt="{{$mySkill->skill_name}}" title="{{$mySkill->skill_name}}">
+                                <img  class="grayscale " height="250px" width="250px"  src='{{$mySkill->skill_link}}' alt="{{$mySkill->skill_name}}" title="{{$mySkill->skill_name}}">
                             @endforeach
                         </div>
                     </div>
