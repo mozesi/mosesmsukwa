@@ -15,13 +15,13 @@
                         <!-- First set of images -->
                         <div class="flex space-x-4">
                             @foreach ($mySkills as $mySkill )
-                                <img  class="grayscale bg-white" height="200px" width="200px" src="storage/{{$mySkill->skill_image}}" alt="{{$mySkill->skill_name}}">
+                                <img  class="grayscale bg-white" height="200px" width="200px" src="storage\{{$mySkill->skill_image}}" alt="{{$mySkill->skill_name}}">
                             @endforeach
                         </div>
                         <!-- Duplicate set for seamless scrolling -->
                         <div class="flex space-x-4">
                             @foreach ($mySkills as $mySkill )
-                                <img  class="grayscale bg-white" height="200px" width="200px" src="storage/{{$mySkill->skill_image}}" alt="{{$mySkill->skill_name}}">
+                                <img  class="grayscale bg-white" height="200px" width="200px" src="storage\{{$mySkill->skill_image}}" alt="{{$mySkill->skill_name}}">
                             @endforeach
                         </div>
                     </div>
